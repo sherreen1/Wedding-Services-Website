@@ -100,57 +100,51 @@
     </div>
 
     <!-- Navbar 2: Main Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light main-navbar border-bottom">
-      <div class="container-fluid px-4">
+  <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+    <div class="container-fluid">
+
         <!-- Logo -->
         <a class="navbar-brand" href="index.html">
-          <img
-            src="img/Henna Logo-02 2.png"
-            alt="Henna App Logo"
-            class="img-fluid"
-          />
+            <img src="img/Henna Logo-02 2.png" alt="Henna Logo" class="navbar-logo">
         </a>
 
-        <!-- Toggle Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <!-- Menu Icon -->
+        <button class="navbar-toggler custom-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
         </button>
 
-        <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navigation Links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html"> Home </a>
-            </li>
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <li class="nav-item">
-              <a class="nav-link" href="services.html"> Wedding Services </a>
-            </li>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="providers.html"> Providers </a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Wedding Services</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="about.html"> About </a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="providers.html">Providers</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
 
-          <!-- Search + Download App -->
-          <form class="form-navbar d-flex align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+       <form class="form-navbar d-flex align-items-center">
             <div class="search-box position-relative">
               <input
                 class="form-control"
@@ -166,22 +160,24 @@
               Download App
             </button>
           </form>
-        </div>
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
     <!-- Navbar 3: Nested Navbar -->
     <div
       class="nested-navbar container-fluid d-flex align-items-center justify-content-between"
     >
-      <!-- Page Title -->
-      <a href="index.html" class="page-title"> Home </a>
+      <!-- Page Title + Breadcrumb -->
+      <div class="d-flex align-items-center gap-2">
+        <a href="index.html" class="page-title">Home</a>
+      </div>
 
       <!-- Account Buttons -->
       <div class="account-buttons d-flex align-items-center">
-        <a href="#" class="btn button-nested-navbar"> Create Account </a>
+        <a href="#" class="btn button-nested-navbar">Create Account</a>
 
-        <a href="#" class="btn button-login-nested"> Login </a>
+        <a href="#" class="btn button-login-nested">Login</a>
       </div>
     </div>
     <!-- End Three Navbars -->
@@ -609,7 +605,7 @@
     </section>
 
     <!-- End Download section -->
-     
+
     <!-- Start About section -->
 
     <section class="about mt-5">
@@ -659,84 +655,87 @@
     <!-- End About section -->
     <!-- Start footer Section -->
 
-<footer class="footer">
-    <div class="container-fluid px-4 px-lg-5 py-5">
+    <footer class="footer">
+      <div class="container-fluid px-4 px-lg-5 py-5">
         <div class="row g-4">
+          <!-- Logo and Contact -->
+          <div class="col-12 col-lg-6">
+            <img
+              src="img/Fictional Logos-footer.png"
+              alt="Logo"
+              class="img-fluid mb-3"
+              style="max-width: 180px"
+            />
 
-            <!-- Logo and Contact -->
-            <div class="col-12 col-lg-6">
-                <img src="img/Fictional Logos-footer.png"
-                     alt="Logo"
-                     class="img-fluid mb-3"
-                     style="max-width: 180px;">
+            <p class="footer-description">
+              We are a lorem ipsum dolor sit amet, consectetur adipiscing
+              <br class="d-none d-lg-block" />
+              elit, sed do eiusmod tempor incididunt ut labore et dolore
+              <br class="d-none d-lg-block" />
+              magna aliqua. Ut exercitation ullamco laboris nisi ut aliquip ex
+              <br class="d-none d-lg-block" />
+              ea commodo consequat
+            </p>
 
-                <p class="footer-description">
-                    We are a lorem ipsum dolor sit amet, consectetur adipiscing
-                    <br class="d-none d-lg-block">
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    <br class="d-none d-lg-block">
-                    magna aliqua. Ut exercitation ullamco laboris nisi ut aliquip ex
-                    <br class="d-none d-lg-block">
-                    ea commodo consequat
-                </p>
+            <div class="d-flex align-items-center mt-3">
+              <div
+                class="d-flex align-items-center justify-content-center rounded-circle me-3"
+                style="background-color: #feefe6; width: 64px; height: 64px"
+              >
+                <img
+                  src="img/vector-message.png"
+                  alt="Email"
+                  class="img-fluid"
+                  style="width: 31px; height: 31px"
+                />
+              </div>
 
-                <div class="d-flex align-items-center mt-3">
-                    <div class="d-flex align-items-center justify-content-center rounded-circle me-3"
-                         style="background-color: #FEEFE6; width: 64px; height: 64px;">
-                        <img src="img/vector-message.png"
-                             alt="Email"
-                             class="img-fluid"
-                             style="width: 31px; height: 31px;">
-                    </div>
-
-                    <div>
-                        <span class="d-block">Contact us</span>
-                        <a href="mailto:evedesign@example.com" class="footer-email">
-                            evedesign@example.com
-                        </a>
-                    </div>
-                </div>
+              <div>
+                <span class="d-block">Contact us</span>
+                <a href="mailto:evedesign@example.com" class="footer-email">
+                  evedesign@example.com
+                </a>
+              </div>
             </div>
+          </div>
 
-            <!-- Useful Links -->
-            <div class="col-6 col-md-4 col-lg-2 footer-text">
-                <h6>Useful Links</h6>
-                <a href="#">Categories</a>
-                <a href="#">Services</a>
-                <a href="#">Posts</a>
-                <a href="#">Policy</a>
-                <a href="#">Payment Methods</a>
-            </div>
+          <!-- Useful Links -->
+          <div class="col-6 col-md-4 col-lg-2 footer-text">
+            <h6>Useful Links</h6>
+            <a href="#">Categories</a>
+            <a href="#">Services</a>
+            <a href="#">Posts</a>
+            <a href="#">Policy</a>
+            <a href="#">Payment Methods</a>
+          </div>
 
-            <!-- Services -->
-            <div class="col-6 col-md-4 col-lg-2 footer-text">
-                <h6>Services</h6>
-                <a href="#">Wedding Services</a>
-                <a href="#">Others</a>
-                <a href="#">Others</a>
-                <a href="#">Others</a>
-                <a href="#">Others</a>
-            </div>
+          <!-- Services -->
+          <div class="col-6 col-md-4 col-lg-2 footer-text">
+            <h6>Services</h6>
+            <a href="#">Wedding Services</a>
+            <a href="#">Others</a>
+            <a href="#">Others</a>
+            <a href="#">Others</a>
+            <a href="#">Others</a>
+          </div>
 
-            <!-- Social Media -->
-            <div class="col-6 col-md-4 col-lg-2 footer-text">
-                <h6>Social Media</h6>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">WhatsApp</a>
-                <a href="#">Telegram</a>
-                <a href="#">Others</a>
-            </div>
+          <!-- Social Media -->
+          <div class="col-6 col-md-4 col-lg-2 footer-text">
+            <h6>Social Media</h6>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Telegram</a>
+            <a href="#">Others</a>
+          </div>
 
-            <!-- Copyright -->
-            <div class="col-12 text-center mt-4">
-                <p class="mb-0">© 2026, All Rights Reserved</p>
-            </div>
-
+          <!-- Copyright -->
+          <div class="col-12 text-center mt-4">
+            <p class="mb-0">© 2026, All Rights Reserved</p>
+          </div>
         </div>
-    </div>
-</footer>
-
+      </div>
+    </footer>
 
     <!-- End footer Section -->
 

@@ -237,7 +237,48 @@
 .main-navbar .navbar-toggler-icon {
   background-image: url("../img/Icon-navbar.png");
 }
+.navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+    padding: 5px;
+    font-size: 25px;
+    color: #333;
+}
 
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.custom-toggler {
+    border: none;
+    box-shadow: none !important;
+    padding: 5px;
+    font-size: 25px;
+    color: #333;
+}
+
+.custom-toggler i {
+    font-size: 25px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fff;
+        padding: 15px;
+        margin-top: 12px;
+        border-radius: 10px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar-actions {
+        margin-top: 12px;
+    }
+}
 /* =====================================
    Navbar 3: Nested Navbar
 ===================================== */
@@ -364,7 +405,6 @@
     flex-shrink: 0;
   }
 }
-
 /* =====================================
    Responsive: Mobile
 ===================================== */
@@ -2929,4 +2969,166 @@ iframe {
     .courses-providers .portfolio-item h4 {
         font-size: 23px;
     }
+}
+
+
+/* =====================================
+   Final Responsive Navbar Improvements
+   ===================================== */
+
+/* Keep the Bootstrap collapse as a clean dropdown menu on tablets/phones. */
+@media (max-width: 991.98px) {
+  .main-navbar .navbar-collapse {
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px 18px 18px;
+    background: #fff;
+    border: 1px solid #f0e4e1;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  }
+
+  .main-navbar .navbar-nav {
+    width: 100%;
+    align-items: stretch;
+    margin: 0 0 12px;
+  }
+
+  .main-navbar .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #f3eeee;
+  }
+
+  .main-navbar .nav-item:last-child {
+    border-bottom: 0;
+  }
+
+  .main-navbar .nav-link {
+    display: block;
+    width: 100%;
+    padding: 11px 8px;
+    font-size: 15px;
+  }
+
+  .main-navbar .nav-link:hover,
+  .main-navbar .nav-link.active {
+    color: var(--main-color);
+    background: #fff7f5;
+    border-radius: 6px;
+  }
+
+  .form-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch !important;
+    width: 100%;
+    gap: 10px;
+    margin: 10px 0 0;
+  }
+
+  .search-box {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .button-navbar {
+    width: 100%;
+    height: 46px;
+  }
+
+  .nested-navbar {
+    min-height: 70px;
+  }
+}
+
+/* Breadcrumb beside Home in the nested navbar */
+.nested-navbar .breadcrumb-inline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+
+.nested-navbar .breadcrumb-inline a,
+.nested-navbar .breadcrumb-inline span {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.nested-navbar .breadcrumb-inline a {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+.nested-navbar .breadcrumb-inline .breadcrumb-separator {
+  color: var(--main-color);
+}
+
+.nested-navbar .breadcrumb-inline .current-page {
+  color: var(--text-color);
+}
+
+/* Tablet and mobile layout */
+@media (max-width: 767.98px) {
+  .navbar-side .container-fluid {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .main-navbar {
+    padding: 8px 0;
+  }
+
+  .main-navbar .navbar-brand img {
+    width: 112px;
+  }
+
+  .main-navbar .navbar-toggler {
+    padding: 6px 8px;
+  }
+
+  .nested-navbar {
+    padding: 13px 15px;
+    min-height: auto;
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .nested-navbar > div:first-child,
+  .nested-navbar .breadcrumb-inline {
+    flex: 1 1 100%;
+  }
+
+  .nested-navbar .page-title {
+    font-size: 21px;
+  }
+
+  .account-buttons {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .account-buttons .btn {
+    width: auto;
+    flex: 1 1 0;
+    height: 44px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-navbar .navbar-brand img {
+    width: 100px;
+  }
+
+  .nested-navbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .account-buttons .btn {
+    font-size: 12px;
+    padding: 0 6px;
+  }
 }

@@ -90,59 +90,51 @@
     </div>
 
     <!-- Navbar 2: Main Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light main-navbar border-bottom">
-      <div class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+    <div class="container-fluid">
+
         <!-- Logo -->
         <a class="navbar-brand" href="index.html">
-          <img
-            src="img/Henna Logo-02 2.png"
-            alt="Henna App Logo"
-            class="img-fluid"
-          />
+            <img src="img/Henna Logo-02 2.png" alt="Henna Logo" class="navbar-logo">
         </a>
 
-        <!-- Toggle Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <!-- Menu Icon -->
+        <button class="navbar-toggler custom-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
         </button>
 
-        <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navigation Links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html"> Home </a>
-            </li>
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">
-                Wedding Services
-              </a>
-            </li>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="providers.html"> Providers </a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Wedding Services</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="about.html"> About </a>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="providers.html">Providers</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
 
-          <!-- Search + Download App -->
-          <form class="form-navbar d-flex align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+       <form class="form-navbar d-flex align-items-center">
             <div class="search-box position-relative">
               <input
                 class="form-control"
@@ -158,16 +150,16 @@
               Download App
             </button>
           </form>
-        </div>
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
     <!-- Navbar 3: Nested Navbar -->
     <div
       class="nested-navbar container-fluid d-flex align-items-center justify-content-between"
     >
       <!-- Page Title -->
-      <a href="index.html" class="page-title"> Home </a>
+      <a href="index.html" class="page-title">Home/Weeding Services/Service Page </a>
 
       <!-- Account Buttons -->
       <div class="account-buttons d-flex align-items-center">
