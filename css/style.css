@@ -500,8 +500,9 @@
 /* start Header Section */
 .header-section {
   height: 100vh;
-  background-image:
-    url("../img/back-header.png"), url("../img/back-header-back.png");
+  /* background-image:
+    url("../img/back-header.png"), url("../img/back-header-back.png"); */
+  background-image: url("../img/background.jpeg");
   background-size: cover;
   background-position: bottom;
   color: #fff;
